@@ -81,7 +81,7 @@
         </nav>
 
 
-        <?php if(session('success')): ?>
+        <?php if(session('message')): ?>
 
           <div class="container">
 

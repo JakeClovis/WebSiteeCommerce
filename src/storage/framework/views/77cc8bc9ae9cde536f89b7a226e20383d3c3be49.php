@@ -104,7 +104,7 @@ $style = [
                                                             $actionColor = 'button--blue';
                                                         ?>
 
-                                                        <a href="<?php echo e(url('register/verify/'.$user->email_token)); ?>"
+                                                        <a href="<?php echo e(url('register/verify/'.urlencode($user->email_token))); ?>"
                                                             style="<?php echo e($fontFamily); ?> <?php echo e($style['button']); ?> <?php echo e($style[$actionColor]); ?>"
                                                             class="button"
                                                             target="_blank">

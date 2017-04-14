@@ -79,7 +79,7 @@
         </nav>
 
 
-        @if(session('success'))
+        @if(session('message'))
 
           <div class="container">
 
