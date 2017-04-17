@@ -16,6 +16,8 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+
+//email confirmation
 Route::get('register/verify/{token}','Auth\RegisterController@verify');
 
 Route::get('/home', 'HomeController@index');
@@ -24,5 +26,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+//profie
 Route::get('/profile', 'Profile\UserController@profile');
 Route::post('/profile', 'Profile\UserController@update_avatar');
+
+//Facebook login
+Route::get('auth/facebook', 'ScocielLogin\FacebookController@redirectToProvider');
+Route::get('auth/facebook/callback', 'ScocielLogin\FacebookController@handleProviderCallback');

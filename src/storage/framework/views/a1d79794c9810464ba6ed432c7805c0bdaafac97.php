@@ -1,9 +1,19 @@
 <?php $__env->startSection('content'); ?>
 <div class="container">
+
+  <?php if(session('message')): ?>
+        <div class="alert alert-success">
+          <?php echo e(session('message')); ?>
+
+        </div>
+
+  <?php endif; ?>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
+
+
 
                 <div class="panel-body">
                     You are logged in!

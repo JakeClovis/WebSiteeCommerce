@@ -5,12 +5,12 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Login</div>
                     <div class="panel-body">
+
                 <?php if(session('message')): ?>
                       <div class="alert alert-success">
-                        <?php echo e(session('success')); ?>
+                        <?php echo e(session('message')); ?>
 
                       </div>
-
                 <?php endif; ?>
 
                 <div class="panel-body">
@@ -64,6 +64,17 @@
                                 <button type="submit" class="btn btn-primary">
                                     Login
                                 </button>
+
+                                <strong> or </strong>
+
+                                <div class="btn-group social-login-more">
+                                    <button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown">
+                                        Sign in with
+                                    </button>
+                                    <ul class="dropdown-menu text-left " role="menu">
+                                        <li><a href="/auth/facebook"><i class="fa fa-facebook"></i>Facebook</a></li>
+                                    </ul>
+                                </div>
 
                                 <a class="btn btn-link" href="<?php echo e(url('/password/reset')); ?>">
                                     Forgot Your Password?
