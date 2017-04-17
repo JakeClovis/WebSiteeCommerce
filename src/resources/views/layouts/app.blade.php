@@ -54,16 +54,19 @@
                             <li><a href="{{ url('/register') }}">Register</a></li>
                         @else
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="position:relative; padding-left:50px;">
+                                <img src="/uploads/userAvatar/{{ Auth::user()->avatar }}" style="width:36px; height:36px; position:absolute; top:10px; left:10px; border-radius:50%">
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                              </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                   <li><a href="{{ url('/profile') }}"><i class="fa fa-btn fa-user"></i>Profile</a></li>
                                     <li>
                                         <a href="{{ url('/logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Logout
+                                          <i class="fa fa-btn fa-sign-out"> </i>
+                                              Logout
                                         </a>
 
                                         <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
@@ -79,14 +82,7 @@
         </nav>
 
 
-        @if(session('message'))
 
-          <div class="container">
-
-              <div class="alert alert-success"> {{session('success')}} </div>
-          </div>
-
-        @endif
 
         @if(session('error'))
 

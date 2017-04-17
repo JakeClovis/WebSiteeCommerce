@@ -55,16 +55,19 @@
                             <li><a href="<?php echo e(url('/register')); ?>">Register</a></li>
                         <?php else: ?>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    <?php echo e(Auth::user()->name); ?> <span class="caret"></span>
-                                </a>
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="position:relative; padding-left:50px;">
+                                <img src="/uploads/userAvatar/<?php echo e(Auth::user()->avatar); ?>" style="width:36px; height:36px; position:absolute; top:10px; left:10px; border-radius:50%">
+                                <?php echo e(Auth::user()->name); ?> <span class="caret"></span>
+                              </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                   <li><a href="<?php echo e(url('/profile')); ?>"><i class="fa fa-btn fa-user"></i>Profile</a></li>
                                     <li>
                                         <a href="<?php echo e(url('/logout')); ?>"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Logout
+                                          <i class="fa fa-btn fa-sign-out"> </i>
+                                              Logout
                                         </a>
 
                                         <form id="logout-form" action="<?php echo e(url('/logout')); ?>" method="POST" style="display: none;">
@@ -81,14 +84,7 @@
         </nav>
 
 
-        <?php if(session('message')): ?>
 
-          <div class="container">
-
-              <div class="alert alert-success"> <?php echo e(session('success')); ?> </div>
-          </div>
-
-        <?php endif; ?>
 
         <?php if(session('error')): ?>
 
