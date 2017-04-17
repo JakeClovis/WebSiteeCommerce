@@ -5,91 +5,105 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- Styles -->
+        <link href="/css/app.css" rel="stylesheet">
+
         <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            <?php if(Route::has('login')): ?>
-                <div class="top-right links">
-                    <?php if(Auth::check()): ?>
-                        <a href="<?php echo e(url('/home')); ?>">Home</a>
-                    <?php else: ?>
-                        <a href="<?php echo e(url('/login')); ?>">Login</a>
-                        <a href="<?php echo e(url('/register')); ?>">Register</a>
-                    <?php endif; ?>
-                </div>
-            <?php endif; ?>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+      <div class="container">
+          <?php if(session('message')): ?>
+                <div class="alert alert-success">
+                  <?php echo e(session('message')); ?>
+
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+          <?php endif; ?>
+      </div>
+      <!-- Contact Form Starts -->
+      <div class="container">
+                  <!-- Contact Section Starts -->
+          <section id="contact" class="section contact">
+          <!-- Nested Container Starts -->
+          <div class="container">
+            <h2 class="text-center text-light">Contact us</h2>
+            <p class="text-center">
+              List your app features and all the details Lorem ipsum. <br>
+              Nam nec tellus a odio tincidunt auctor a ornare odio. Mauris vitae consequat auctor eu in elit.
+            </p>
+          <!-- Contact Form Starts -->
+            <div class="contact-form-area">
+
+            <form class="form-horizontal" role="form" method="POST" action="<?php echo e(url('/contact')); ?>">
+              <?php echo e(csrf_field()); ?>
+
+                <div class="row">
+                <!-- Name Field Starts -->
+                  <div class="col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="name" class="sr-only">Name: </label>
+                      <input type="text" class="form-control no-border-radius" name="name" id="name"  placeholder="Name" value="<?php echo e(old('name')); ?>" autofocus>
+                      <?php if($errors->has('name')): ?>
+                          <span class="help-block">
+                              <strong><?php echo e($errors->first('name')); ?></strong>
+                          </span>
+                      <?php endif; ?>
+                    </div>
+                  </div>
+                <!-- Name Field Ends -->
+                <!-- Email Field Starts -->
+                  <div class="col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="email" class="sr-only">Email: </label>
+                      <input type="text" class="form-control no-border-radius" name="email" id="email"  placeholder="Email" value="<?php echo e(old('email')); ?>" autofocus>
+                      <?php if($errors->has('email')): ?>
+                          <span class="help-block">
+                              <strong><?php echo e($errors->first('email')); ?></strong>
+                          </span>
+                      <?php endif; ?>
+                    </div>
+                  </div>
+                <!-- Email Field Ends -->
+                <!-- Phone Field Starts -->
+                  <div class="col-sm-4 col-xs-12">
+                    <div class="form-group">
+                      <label for="name" class="sr-only">Phone: </label>
+                      <input type="text" class="form-control no-border-radius" name="phone" id="phone"  placeholder="Phone No" value="<?php echo e(old('phone')); ?>" autofocus>
+                      <?php if($errors->has('phone')): ?>
+                          <span class="help-block">
+                              <strong><?php echo e($errors->first('phone')); ?></strong>
+                          </span>
+                      <?php endif; ?>
+                    </div>
+                  </div>
+                <!-- Phone Field Ends -->
+                <!-- Message Field Starts -->
+                  <div class="col-xs-12">
+                    <div class="form-group">
+                      <label for="message" class="sr-only">Message: </label>
+                      <textarea class="form-control no-border-radius" rows="5" name="message" id="message"  placeholder="Message" autofocus></textarea>
+                      <?php if($errors->has('message')): ?>
+                          <span class="help-block">
+                              <strong><?php echo e($errors->first('message')); ?></strong>
+                          </span>
+                      <?php endif; ?>
+                    </div>
+                  </div>
+                <!-- Message Field Ends -->
+                  <div class="col-xs-12 text-center">
+                    <input type="submit" class="btn btn-lg btn-main animation" value="Contact us">
+                  </div>
                 </div>
+              </form>
             </div>
-        </div>
+          <!-- Contact Form Ends -->
+          </div>
+          <!-- Nested Container Ends -->
+          </section>
+          <!-- Contact Section Ends -->
+          </div>
+      			<!-- Contact Form Ends -->
     </body>
 </html>
