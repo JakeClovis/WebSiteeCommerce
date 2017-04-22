@@ -1,5 +1,5 @@
 <?php $__env->startSection('content'); ?>
-<div class="container">
+
 
   <?php if(session('message')): ?>
         <div class="alert alert-success">
@@ -21,7 +21,13 @@
             </div>
         </div>
     </div>
-</div>
+
+
+  
+
+
+
+
 
 
 

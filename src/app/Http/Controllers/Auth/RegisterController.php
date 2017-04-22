@@ -53,7 +53,7 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255',
+            'name' => 'required|Alpha|max:255',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
         ]);
@@ -79,6 +79,8 @@ class RegisterController extends Controller
     {
         // Laravel validation
         $validator = $this->validator($request->all());
+
+
         if ($validator->fails())
         {
             $this->throwValidationException($request, $validator);

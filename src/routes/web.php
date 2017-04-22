@@ -15,7 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/accueil', 'Accueil\AccueilController@index');
+
 Auth::routes();
+
+
 
 //email confirmation
 Route::get('register/verify/{token}','Auth\RegisterController@verify');

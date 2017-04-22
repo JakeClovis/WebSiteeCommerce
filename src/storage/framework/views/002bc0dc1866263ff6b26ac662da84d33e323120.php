@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Styles -->
-        <link href="/css/app.css" rel="stylesheet">
-
-        <title>Laravel</title>
-
-    </head>
-    <body>
-
+<?php $__env->startSection('content'); ?>
       <div class="container">
           <?php if(session('message')): ?>
                 <div class="alert alert-success">
@@ -22,13 +8,115 @@
 
           <?php endif; ?>
       </div>
+
+          <!-- carousel -->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                              <img class="first-slide" src="Slide/slide1.jpg" alt="First slide">
+                              <div class="carousel-caption">
+                                <?php if(Auth::guest()): ?>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="<?php echo e(route('login')); ?>">Login</a>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="<?php echo e(route('register')); ?>">Register</a>
+
+                                <?php endif; ?>
+                              </div>
+                          </div>
+                          <div class="item">
+                              <img class="first-slide" src="Slide/slide1.jpg" alt="First slide">
+                              <div class="carousel-caption">
+                                <?php if(Auth::guest()): ?>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="<?php echo e(route('login')); ?>">Login</a>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="<?php echo e(route('register')); ?>">Register</a>
+                                <?php endif; ?>
+                              </div>
+                          </div>
+                          <div class="item">
+                              <img class="first-slide" src="Slide/slide1.jpg" alt="First slide">
+                              <div class="carousel-caption">
+                                <?php if(Auth::guest()): ?>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="<?php echo e(route('login')); ?>">Login</a>
+                                <a class="btn btn-theme btn-sm btn-min-block" href="<?php echo e(route('register')); ?>">Register</a>
+                                <?php endif; ?>
+                              </div>
+                          </div>
+                      </div>
+                      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div><!-- /.carousel -->  </br>
+<!--////////////////////////////////////////////////////////////////-->
+
+
+
+
+        <!-- section reparation -->
+      <div class=" col-sm-12 col-sm-push ">
+
+        <h4 class="text-center text-light">  &#8211; Service de réparation &#8211; </h4>
+        <section id="reparation">
+        <h2 class="text-center text-light">Votre iPhone est cassé ? Pas de problème</h2>
+
+
+
+      </br>
+            <h4 class="text-center text-light">  &#8211; Service de déblocage &#8211; </h4>
+        <h2 class="text-center text-light">Votre iPhone est bloqué ? On s’en occupe </h2>
+
+        </section>
+      </div>  <!-- section /.reparation -->
+
+
+
+        <!-- section vente -->
+      <div class=" col-sm-12 col-sm-push ">
+
+
+        <section id="vente">
+        <h2 class="text-center text-light">Nos smartphones</h2>
+
+
+        </section>
+      </div><!-- section /.vente -->
+
+
+
+      <!-- section accessoires -->
+      <div class=" col-sm-12 col-sm-push ">
+
+
+        <section id="accessoires">
+        <h2 class="text-center text-light">Protéger votre mobile avec nos accessoires</h2>
+
+
+        </section>
+      </div> <!-- section /.accessoires -->
+
+
+
+
+
+
+
+
       <!-- Contact Form Starts -->
-      <div class="container">
+ <div class=" col-sm-12 col-sm-push ">
                   <!-- Contact Section Starts -->
           <section id="contact" class="section contact">
           <!-- Nested Container Starts -->
-          <div class="container">
-            <h2 class="text-center text-light">Contact us</h2>
+
+            <h2 class="text-center text-light">Contactez-Nous</h2>
             <p class="text-center">
               List your app features and all the details Lorem ipsum. <br>
               Nam nec tellus a odio tincidunt auctor a ornare odio. Mauris vitae consequat auctor eu in elit.
@@ -41,40 +129,52 @@
 
                 <div class="row">
                 <!-- Name Field Starts -->
-                  <div class="col-sm-4 col-xs-12">
+                  <div class="col-sm-4 col-xs-10">
                     <div class="form-group">
                       <label for="name" class="sr-only">Name: </label>
-                      <input type="text" class="form-control no-border-radius" name="name" id="name"  placeholder="Name" value="<?php echo e(old('name')); ?>" autofocus>
+
                       <?php if($errors->has('name')): ?>
+                      <input type="text" class="form-control no-border-radius" name="name" id="name"  placeholder="Name" value="<?php echo e(old('name')); ?>" autofocus>
                           <span class="help-block">
                               <strong><?php echo e($errors->first('name')); ?></strong>
                           </span>
+                      <?php else: ?>
+
+                        <input type="text" class="form-control no-border-radius" name="name" id="name"  placeholder="Name" value="<?php echo e(old('name')); ?>">
                       <?php endif; ?>
                     </div>
                   </div>
                 <!-- Name Field Ends -->
                 <!-- Email Field Starts -->
-                  <div class="col-sm-4 col-xs-12">
+                  <div class="col-sm-4 col-xs-10">
                     <div class="form-group">
                       <label for="email" class="sr-only">Email: </label>
-                      <input type="text" class="form-control no-border-radius" name="email" id="email"  placeholder="Email" value="<?php echo e(old('email')); ?>" autofocus>
+
                       <?php if($errors->has('email')): ?>
+                      <input type="text" class="form-control no-border-radius" name="email" id="email"  placeholder="Email" value="<?php echo e(old('email')); ?>" autofocus>
                           <span class="help-block">
                               <strong><?php echo e($errors->first('email')); ?></strong>
                           </span>
+
+                        <?php else: ?>
+                        <input type="text" class="form-control no-border-radius" name="email" id="email"  placeholder="Email" value="<?php echo e(old('email')); ?>">
                       <?php endif; ?>
                     </div>
                   </div>
                 <!-- Email Field Ends -->
                 <!-- Phone Field Starts -->
-                  <div class="col-sm-4 col-xs-12">
+                  <div class="col-sm-4 col-xs-10">
                     <div class="form-group">
                       <label for="name" class="sr-only">Phone: </label>
-                      <input type="text" class="form-control no-border-radius" name="phone" id="phone"  placeholder="Phone No" value="<?php echo e(old('phone')); ?>" autofocus>
+
                       <?php if($errors->has('phone')): ?>
+                        <input type="text" class="form-control no-border-radius" name="phone" id="phone"  placeholder="Phone No" value="<?php echo e(old('phone')); ?>" autofocus>
                           <span class="help-block">
                               <strong><?php echo e($errors->first('phone')); ?></strong>
                           </span>
+
+                     <?php else: ?>
+                     <input type="text" class="form-control no-border-radius" name="phone" id="phone"  placeholder="Phone No" value="<?php echo e(old('phone')); ?>">
                       <?php endif; ?>
                     </div>
                   </div>
@@ -83,11 +183,14 @@
                   <div class="col-xs-12">
                     <div class="form-group">
                       <label for="message" class="sr-only">Message: </label>
-                      <textarea class="form-control no-border-radius" rows="5" name="message" id="message"  placeholder="Message" autofocus></textarea>
+
                       <?php if($errors->has('message')): ?>
+                      <textarea class="form-control no-border-radius" rows="5" name="message" id="message"  placeholder="Message" autofocus></textarea>
                           <span class="help-block">
                               <strong><?php echo e($errors->first('message')); ?></strong>
                           </span>
+                        <?php else: ?>
+                        <textarea class="form-control no-border-radius" rows="5" name="message" id="message"  placeholder="Message" ></textarea>
                       <?php endif; ?>
                     </div>
                   </div>
@@ -99,11 +202,17 @@
               </form>
             </div>
           <!-- Contact Form Ends -->
-          </div>
+
           <!-- Nested Container Ends -->
           </section>
           <!-- Contact Section Ends -->
-          </div>
+      </div>
       			<!-- Contact Form Ends -->
-    </body>
-</html>
+
+
+
+
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
