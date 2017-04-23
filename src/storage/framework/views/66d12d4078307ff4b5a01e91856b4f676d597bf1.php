@@ -18,7 +18,6 @@
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
 
     <!-- logo onglet moyeur de recherche -->
     <link rel="shortcut icon" href="logos/favicon.png"  />
@@ -35,6 +34,7 @@
 <body>
 
 </br>
+
   <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -62,7 +62,7 @@
   </div>
 
 
-
+<header class="top-header">
   <div class="container">
       <div id="app">
           <nav class="navbar navbar-inverse navbar-static scrolling-navbar">
@@ -97,9 +97,9 @@
 
                           <li class="nav-item"><a class=""  href="#reparation">Réparation et déblocage</a></li>
                           <li class="nav-item"><a class=""  href="#vente">Vente de Smartphones</a></li>
-                          <li><a class=""  href="#accessoires">Vente d&rsquo;accessoires</a></li>
-                          <li><a class=""  href="#pres">A propos de nous</a></li>
-                          <li><a class=""  href="#contact">Contactez-nous</a></li>
+                          <li><a class="nav-item"  href="#accessoires">Vente d&rsquo;accessoires</a></li>
+                          <li><a class="nav-item"  href="#pres">A propos de nous</a></li>
+                          <li><a class="nav-item"  href="#contact">Contactez-nous</a></li>
                           </ul>
 
                       <!-- Right Side Of Navbar -->
@@ -116,8 +116,8 @@
                                 </a>
 
                                   <ul class="dropdown-menu" role="menu">
-                                     <li><a href="<?php echo e(url('home')); ?>"><i class="fa fa-btn fa-user"></i>Mon Compte</a></li>
-                                     <li class="divider"></li>
+                                     <li><a href="{('home')}}"><i class="fa fa-btn fa-user"></i>Mon Compte</a></li>
+                                      <li class="divider"></li>
                                      <li><a href="<?php echo e(url('/profile')); ?>"><i class="fa fa-btn fa-user"></i>Profile</a></li>
                                      <li class="divider"></li>
                                       <li>
@@ -143,14 +143,20 @@
           </nav>
 
 
-
         <?php echo $__env->yieldContent('content'); ?>
 
 
 
+        <!-- footer starts here -->
+      	<div class="footer text-center">
+          <div class="clearfix">&nbsp;</div>  <div class="clearfix">&nbsp;</div>
+          <p style="color:#ffffff;">COPYRIGHT &copy; Point Express Mobile - 2017</p>
+          <div class="clearfix">&nbsp;</div>
+
+        <div>
+
     <!-- Scripts -->
     <script src="/js/app.js"></script>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

@@ -1,4 +1,9 @@
 <?php $__env->startSection('content'); ?>
+
+
+
+<!-- ///////////////////////////////////////////////////////////////////-->
+
       <div class="container">
           <?php if(session('message')): ?>
                 <div class="alert alert-success">
@@ -58,39 +63,102 @@
                   </div><!-- /.carousel -->  </br>
 <!--////////////////////////////////////////////////////////////////-->
 
-
-
-
         <!-- section reparation -->
       <div class=" col-sm-12 col-sm-push ">
 
         <h4 class="text-center text-light">  &#8211; Service de réparation &#8211; </h4>
         <section id="reparation">
-        <h2 class="text-center text-light">Votre iPhone est cassé ? Pas de problème</h2>
+        <h2 class="text-center text-light text-danger">Votre iPhone est cassé ? Pas de problème</h2>
+
+        <div class="container">
+          <div class="row">
+
+            <div class="row">
+                <div class="col">
+                  <div class="col-md-5  wow slideInUp animated">
+                    <img class="img-responsive details-phone" src="img/verticle-phone.png" alt="">
+                  </div>
+                </div>
+                <div class="col">
+
+                  <div class="col-md-7 animated ">
+                      <div class="clearfix">&nbsp;</div>
+                      <div class="clearfix">&nbsp;</div>
+                    <h1 class="text-danger">Une intervention rapide</h1>
+
+                    Votre téléphone est cassé ou en panne ?
+                    Pas de problème, nous nous occupons de tout.
+                      <div class="clearfix">&nbsp;</div>
+                    Nous intervenons sur votre smartphone immédiatement et sans aucun rendez-vous pour votre réparation
+                    et nous la garantissons de 3 à 12 mois.
+                    <div class="clearfix">&nbsp;</div>
+                    <h1 class="text-danger">Sans aucun rendez-vous </h1>
+                    Chez nous, pas besoin de rendez-vous !
+
+                    Si la pièce à remplacer est en stock, nous nous en occupons immédiatement.
+                      <div class="clearfix">&nbsp;</div>
+                    <h1 class="text-danger">Vous n’avez pas d’iPhone ? </h1>
+                    Nous réparons également les téléphones Android de la marque Samsung, Wiko, Sony, HTC…
+                      <div class="clearfix">&nbsp;</div>
+                    Nous vous invitons à vous rendre en boutique ou de nous contacter par téléphone au 04 42 70 32 69
 
 
+                  </div>
+                </div>
+          </div>
+
+        </div>
+
+        </div>
 
       </br>
             <h4 class="text-center text-light">  &#8211; Service de déblocage &#8211; </h4>
         <h2 class="text-center text-light">Votre iPhone est bloqué ? On s’en occupe </h2>
 
+
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-8 wow fadeInLeft animated">
+                <div class="clearfix">&nbsp;</div>
+                <div class="clearfix">&nbsp;</div>
+                <div class="clearfix">&nbsp;</div>
+                  <div class="clearfix">&nbsp;</div>
+              <h1 class="text-center text-light text-danger">Une intervention rapide</h1>
+                <div class="clearfix">&nbsp;</div>
+              Vous possédez un smartphone ou téléphone bloqué sur un opérateur français ou étranger ?
+                <div class="clearfix">&nbsp;</div>
+              Point Express Mobile, vous desimlock votre iPhone, Smartphone ou mobile simplement pour que
+              vous téléphone accepte les puces des opérateurs du monde entier.
+
+            </div>
+
+              <div class="col-xs-4 horizontal-phone wow fadeInRight animated">
+                <img class="img-responsive" src="img/iphone7.jpg" alt="phone">
+              </div>
+
+          </div>
+        </div>
+
+
+
+
         </section>
       </div>  <!-- section /.reparation -->
 
 
-
+<!-- ///////////////////////////////////////////////////////////////////-->
         <!-- section vente -->
-      <div class=" col-sm-12 col-sm-push ">
-
 
         <section id="vente">
         <h2 class="text-center text-light">Nos smartphones</h2>
 
 
+
+
         </section>
-      </div><!-- section /.vente -->
+      <!-- section /.vente -->
 
-
+<!-- ///////////////////////////////////////////////////////////////////-->
 
       <!-- section accessoires -->
       <div class=" col-sm-12 col-sm-push ">
@@ -103,17 +171,91 @@
         </section>
       </div> <!-- section /.accessoires -->
 
+<!-- ///////////////////////////////////////////////////////////////////-->
+
+</div>
+</div>
+
+<div class="clearfix">&nbsp;</div>
+      <!-- section accessoires -->
+      <div class=" col-sm-12 coordonee">
 
 
+        <section id="Coordonnées">
+        <h2 class="text-center text-light">Coordonnées et informations de contact</h2>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+
+              <div class="panel-body-map">
+                <div id="map" style="height:550px;">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11616.45454193507!2d5.5702613!3d43.2909419!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1045673e61936775!2sPoint+Express+Mobile!5e0!3m2!1sfr!2sfr!4v1484905265941" width="630" height="520" frameborder="2" style="border:0" allowfullscreen></iframe>
+
+                </div>
+              </div>
 
 
+            </div>
+
+              <div class="col-md-4">
+
+                <address>
+
+                  63 Rue de la République  <br>
+                  13400 Aubagne   <br>
+                  France<br>
+                  <div class="clearfix">&nbsp;</div>
+                  Téléphone: 04 42 70 32 69<br>
+                  E-mail:<a href="mailto:pointexpressmobile@gmail.com">pointexpressmobile@gmail.com</a><br>
+
+               </address>
+
+       <div class="clearfix">&nbsp;</div>
+               <div class="row">
+                 <div class="col-md-6">
+
+                    <ul class="list-unstyled">
+                     <li> Lundi</li>
+                     <li>Mardi</li>
+                     <li>Mercredi</li>
+                     <li>Jeudi</li>
+                     <li>Vendredi</li>
+                     <li>Samedi</li>
+                     <li>Dimanche</li>
+                    </ul>
+
+                 </div>
+                  <div class="col-md-6">
+                    <ul class="list-unstyled">
+                     <li>09:00 - 19:00</li>
+                     <li>09:00 - 19:00</li>
+                     <li>09:00 - 19:00</li>
+                     <li>09:00 - 19:00</li>
+                     <li>09:00 - 19:00</li>
+                     <li>09:00 - 19:00</li>
+                     <li>Fermée</li>
+                    </ul>
+
+                  </div>
+
+
+              </div>
+
+          </div>
+        </div>
+
+        </section>
+      </div> <!-- section /.oordonnées -->
+
+<!-- ///////////////////////////////////////////////////////////////////-->
 
 
 
       <!-- Contact Form Starts -->
- <div class=" col-sm-12 col-sm-push ">
-                  <!-- Contact Section Starts -->
-          <section id="contact" class="section contact">
+ <div class=" col-sm-12 contact">
+            <div class="container">      <!-- Contact Section Starts -->
+          <section id="contact" class="section">
           <!-- Nested Container Starts -->
 
             <h2 class="text-center text-light">Contactez-Nous</h2>
@@ -122,7 +264,7 @@
               Nam nec tellus a odio tincidunt auctor a ornare odio. Mauris vitae consequat auctor eu in elit.
             </p>
           <!-- Contact Form Starts -->
-            <div class="contact-form-area">
+            <div class="">
 
             <form class="form-horizontal" role="form" method="POST" action="<?php echo e(url('/contact')); ?>">
               <?php echo e(csrf_field()); ?>
@@ -131,6 +273,8 @@
                 <!-- Name Field Starts -->
                   <div class="col-sm-4 col-xs-10">
                     <div class="form-group">
+
+
                       <label for="name" class="sr-only">Name: </label>
 
                       <?php if($errors->has('name')): ?>
@@ -207,7 +351,7 @@
           </section>
           <!-- Contact Section Ends -->
       </div>
-      			<!-- Contact Form Ends -->
+    </div>		<!-- Contact Form Ends -->
 
 
 
