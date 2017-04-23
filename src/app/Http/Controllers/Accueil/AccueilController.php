@@ -22,4 +22,17 @@ class AccueilController extends Controller
     {
         return view('welcome');
     }
+
+
+    public function store(Request $request)
+    {
+      $this->validate(
+              $request,
+              [
+                'comment' => 'required',
+              ]
+      );
+
+
+    }
 }

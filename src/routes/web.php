@@ -30,13 +30,15 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+Route::post('/comment', 'Comment\CommentController@store');
+
 //profie
 Route::get('/profile', 'Profile\UserController@profile');
 Route::post('/profile', 'Profile\UserController@update_avatar');
 
 //Facebook login
-Route::get('auth/facebook', 'ScocielLogin\FacebookController@redirectToProvider');
-Route::get('auth/facebook/callback', 'ScocielLogin\FacebookController@handleProviderCallback');
+Route::get('auth/facebook', 'ScocialLogin\FacebookController@redirectToProvider');
+Route::get('auth/facebook/callback', 'ScocialLogin\FacebookController@handleProviderCallback');
 
 
 Route::post('/contact', 'ContactUs\ContactUsController@store');

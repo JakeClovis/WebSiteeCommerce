@@ -18,6 +18,7 @@
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
 
     <!-- logo onglet moyeur de recherche -->
     <link rel="shortcut icon" href="logos/favicon.png"  />
@@ -115,6 +116,8 @@
                                 </a>
 
                                   <ul class="dropdown-menu" role="menu">
+                                     <li><a href="<?php echo e(url('home')); ?>"><i class="fa fa-btn fa-user"></i>Mon Compte</a></li>
+                                     <li class="divider"></li>
                                      <li><a href="<?php echo e(url('/profile')); ?>"><i class="fa fa-btn fa-user"></i>Profile</a></li>
                                      <li class="divider"></li>
                                       <li>
@@ -147,6 +150,7 @@
 
     <!-- Scripts -->
     <script src="/js/app.js"></script>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
