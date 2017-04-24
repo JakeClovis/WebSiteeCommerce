@@ -152,7 +152,88 @@
         <section id="vente">
         <h2 class="text-center text-light">Nos smartphones</h2>
 
+        <div class="bg-4">
+  <div class="container">
+	<div class="row">
+	   <div class="col-sm-4 col-xs-6">
 
+        <div class="panel panel-default">
+          <div class="panel-thumbnail"><a href="#"><img src="//placehold.it/600x400/444/F8F8F8" class="img-responsive"></a></div>
+          <div class="panel-body">
+            <p>Renovations</p>
+            <p></p>
+
+          </div>
+        </div><!--/panel-->
+      </div><!--/col-->
+
+      <div class="col-sm-4 col-xs-6">
+
+      	<div class="panel panel-default">
+          <div class="panel-thumbnail"><a href="#"><img src="//placehold.it/600x400/454545/FFF" class="img-responsive"></a></div>
+          <div class="panel-body">
+            <p>Projects</p>
+            <p></p>
+
+          </div>
+        </div><!--/panel-->
+      </div><!--/col-->
+
+      <div class="col-sm-4 col-xs-6">
+
+      	<div class="panel panel-default">
+          <div class="panel-thumbnail"><a href="#" title="Interiors"><img src="//placehold.it/600x400/555/F2F2F2" class="img-responsive"></a></div>
+          <div class="panel-body">
+            <p>Interiors</p>
+            <p></p>
+
+          </div>
+        </div><!--/panel-->
+
+      </div><!--/col-->
+
+      <div class="col-sm-4 col-xs-6">
+
+      	<div class="panel panel-default">
+          <div class="panel-thumbnail"><a href="#"><img src="//placehold.it/600x400/555/FFF" class="img-responsive"></a></div>
+          <div class="panel-body">
+            <p>Design</p>
+            <p></p>
+
+          </div>
+        </div><!--/panel-->
+
+      </div><!--/col-->
+
+      <div class="col-sm-4 col-xs-6">
+
+      	<div class="panel panel-default">
+          <div class="panel-thumbnail"><a href="#"><img src="//placehold.it/600x400/555/EEE" class="img-responsive"></a></div>
+          <div class="panel-body">
+            <p>Site Planning</p>
+            <p></p>
+
+          </div>
+        </div><!--/panel-->
+
+      </div><!--/col-->
+
+      <div class="col-sm-4 col-xs-6">
+
+      	<div class="panel panel-default">
+          <div class="panel-thumbnail"><a href="#"><img src="//placehold.it/600x400/666/F4F4F4" class="img-responsive"></a></div>
+          <div class="panel-body">
+            <p>More</p>
+            <p></p>
+
+          </div>
+        </div><!--/panel-->
+
+      </div><!--/col-->
+
+	</div><!--/row-->
+  </div><!--/container-->
+</div>
 
 
         </section>
@@ -250,6 +331,10 @@
 
 <!-- ///////////////////////////////////////////////////////////////////-->
 
+<ul class="nav pull-right scroll-top">
+  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
+<!-- ///////////////////////////////////////////////////////////////////-->
 
 
       <!-- Contact Form Starts -->

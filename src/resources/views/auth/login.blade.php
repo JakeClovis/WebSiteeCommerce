@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app1')
 
 
 
@@ -92,4 +92,7 @@
         </div>
     </div>
 </div>
+
+<!--/////////////////////////////////////////////////:-->
+</div></div>
 @endsection
