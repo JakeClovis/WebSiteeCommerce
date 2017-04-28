@@ -1,7 +1,10 @@
 <?php $__env->startSection('content'); ?>
 
+<style>
 
+</style>
 
+<font size =+1><font>
 <!-- ///////////////////////////////////////////////////////////////////-->
 
       <div class="container">
@@ -60,7 +63,7 @@
                           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                           <span class="sr-only">Next</span>
                       </a>
-                  </div><!-- /.carousel -->  </br>
+                  </div><!-- /.carousel -->
 <!--////////////////////////////////////////////////////////////////-->
 
         <!-- section reparation -->
@@ -68,44 +71,47 @@
 
         <h4 class="text-center text-light">  &#8211; Service de réparation &#8211; </h4>
         <section id="reparation">
-        <h2 class="text-center text-light text-danger">Votre iPhone est cassé ? Pas de problème</h2>
+        <h1 class="text-center text-light text-danger">Votre iPhone est cassé ? Pas de problème</h1>
 
         <div class="container">
           <div class="row">
 
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col">
-                  <div class="col-md-5  wow slideInUp animated">
-                    <img class="img-responsive details-phone" src="img/verticle-phone.png" alt="">
+                  <div class="col-md-4  wow slideInUp animated">
+                    <img class="img-responsive" src="img/iphonecasseaubagne1.png" alt="">
                   </div>
                 </div>
                 <div class="col">
 
                   <div class="col-md-7 animated ">
-                      <div class="clearfix">&nbsp;</div>
-                      <div class="clearfix">&nbsp;</div>
+                    <div class="clearfix">&nbsp;</div>
+                    <div class="clearfix">&nbsp;</div>
+                  <!--  <div class="clearfix">&nbsp;</div>-->
                     <h1 class="text-danger">Une intervention rapide</h1>
 
-                    Votre téléphone est cassé ou en panne ?
-                    Pas de problème, nous nous occupons de tout.
-                      <div class="clearfix">&nbsp;</div>
-                    Nous intervenons sur votre smartphone immédiatement et sans aucun rendez-vous pour votre réparation
-                    et nous la garantissons de 3 à 12 mois.
-                    <div class="clearfix">&nbsp;</div>
-                    <h1 class="text-danger">Sans aucun rendez-vous </h1>
-                    Chez nous, pas besoin de rendez-vous !
 
-                    Si la pièce à remplacer est en stock, nous nous en occupons immédiatement.
-                      <div class="clearfix">&nbsp;</div>
-                    <h1 class="text-danger">Vous n’avez pas d’iPhone ? </h1>
-                    Nous réparons également les téléphones Android de la marque Samsung, Wiko, Sony, HTC…
-                      <div class="clearfix">&nbsp;</div>
-                    Nous vous invitons à vous rendre en boutique ou de nous contacter par téléphone au 04 42 70 32 69
+                          <p> Votre téléphone est cassé ou en panne ?</p>
+                          Pas de problème, nous nous occupons de tout.
+                            <div class="clearfix">&nbsp;</div>
+                          Nous intervenons sur votre smartphone immédiatement et sans aucun rendez-vous pour votre réparation
+                          et nous la garantissons de 3 à 12 mois.
+                          <!--<div class="clearfix">&nbsp;</div>-->
+                          <h1 class="text-danger">Sans aucun rendez-vous </h1>
+                          Chez nous, pas besoin de rendez-vous !
+
+                          Si la pièce à remplacer est en stock, nous nous en occupons immédiatement.
+                            <!--<div class="clearfix">&nbsp;</div>-->
+                          <h1 class="text-danger">Vous n’avez pas d’iPhone ? </h1>
+                          Nous réparons également les téléphones Android de la marque Samsung, Wiko, Sony, HTC…
+                          <!--  <div class="clearfix">&nbsp;</div>-->
+                          Nous vous invitons à vous rendre en boutique ou de nous contacter par téléphone au 04 42 70 32 69
 
 
                   </div>
                 </div>
           </div>
+           <div class="row align-items-end"></div>
 
         </div>
 
@@ -113,7 +119,7 @@
 
       </br>
             <h4 class="text-center text-light">  &#8211; Service de déblocage &#8211; </h4>
-        <h2 class="text-center text-light">Votre iPhone est bloqué ? On s’en occupe </h2>
+        <h2 class="text-center text-light text-danger">Votre iPhone est bloqué ? On s’en occupe </h2>
 
 
         <div class="container">
@@ -121,9 +127,9 @@
             <div class="col-xs-8 wow fadeInLeft animated">
                 <div class="clearfix">&nbsp;</div>
                 <div class="clearfix">&nbsp;</div>
-                <div class="clearfix">&nbsp;</div>
-                  <div class="clearfix">&nbsp;</div>
-              <h1 class="text-center text-light text-danger">Une intervention rapide</h1>
+                <!--<div class="clearfix">&nbsp;</div>
+                  <div class="clearfix">&nbsp;</div>-->
+              <h2 class="text-center text-light text-danger">Une intervention rapide</h2>
                 <div class="clearfix">&nbsp;</div>
               Vous possédez un smartphone ou téléphone bloqué sur un opérateur français ou étranger ?
                 <div class="clearfix">&nbsp;</div>
@@ -133,12 +139,11 @@
             </div>
 
               <div class="col-xs-4 horizontal-phone wow fadeInRight animated">
-                <img class="img-responsive" src="img/iphone7.jpg" alt="phone">
+                <img class="img-responsive" src="img/iphone7.jpg" alt="Iphone" class="img-responsive">
               </div>
 
           </div>
         </div>
-
 
 
 
@@ -150,107 +155,22 @@
         <!-- section vente -->
 
         <section id="vente">
-        <h2 class="text-center text-light">Nos smartphones</h2>
+        <h1 class="text-center text-light text-danger">Nos smartphones</h1>
 
-        <div class="bg-4">
-  <div class="container">
-	<div class="row">
-	   <div class="col-sm-4 col-xs-6">
 
-        <div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="#"><img src="//placehold.it/600x400/444/F8F8F8" class="img-responsive"></a></div>
-          <div class="panel-body">
-            <p>Renovations</p>
-            <p></p>
 
-          </div>
-        </div><!--/panel-->
-      </div><!--/col-->
 
-      <div class="col-sm-4 col-xs-6">
 
-      	<div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="#"><img src="//placehold.it/600x400/454545/FFF" class="img-responsive"></a></div>
-          <div class="panel-body">
-            <p>Projects</p>
-            <p></p>
 
-          </div>
-        </div><!--/panel-->
-      </div><!--/col-->
 
-      <div class="col-sm-4 col-xs-6">
-
-      	<div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="#" title="Interiors"><img src="//placehold.it/600x400/555/F2F2F2" class="img-responsive"></a></div>
-          <div class="panel-body">
-            <p>Interiors</p>
-            <p></p>
-
-          </div>
-        </div><!--/panel-->
-
-      </div><!--/col-->
-
-      <div class="col-sm-4 col-xs-6">
-
-      	<div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="#"><img src="//placehold.it/600x400/555/FFF" class="img-responsive"></a></div>
-          <div class="panel-body">
-            <p>Design</p>
-            <p></p>
-
-          </div>
-        </div><!--/panel-->
-
-      </div><!--/col-->
-
-      <div class="col-sm-4 col-xs-6">
-
-      	<div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="#"><img src="//placehold.it/600x400/555/EEE" class="img-responsive"></a></div>
-          <div class="panel-body">
-            <p>Site Planning</p>
-            <p></p>
-
-          </div>
-        </div><!--/panel-->
-
-      </div><!--/col-->
-
-      <div class="col-sm-4 col-xs-6">
-
-      	<div class="panel panel-default">
-          <div class="panel-thumbnail"><a href="#"><img src="//placehold.it/600x400/666/F4F4F4" class="img-responsive"></a></div>
-          <div class="panel-body">
-            <p>More</p>
-            <p></p>
-
-          </div>
-        </div><!--/panel-->
-
-      </div><!--/col-->
-
-	</div><!--/row-->
-  </div><!--/container-->
-</div>
-
+          <h1 class="text-center text-light text-danger"> Protéger votre mobile avec nos accessoires</h1>
 
         </section>
       <!-- section /.vente -->
 
-<!-- ///////////////////////////////////////////////////////////////////-->
 
-      <!-- section accessoires -->
-      <div class=" col-sm-12 col-sm-push ">
+<!--///////////////////////////////////////////////////////////////////////// -->
 
-
-        <section id="accessoires">
-        <h2 class="text-center text-light">Protéger votre mobile avec nos accessoires</h2>
-
-
-        </section>
-      </div> <!-- section /.accessoires -->
 
 <!-- ///////////////////////////////////////////////////////////////////-->
 

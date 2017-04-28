@@ -19,6 +19,14 @@
     <link href="/css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!--  -->
+
+    <!-- fin. -->
+
     <!-- logo onglet moyeur de recherche -->
     <link rel="shortcut icon" href="logos/favicon.png"  />
     <!-- Scripts -->
@@ -32,6 +40,17 @@
   <script type='text/javascript' src='/js/demo.js'></script>
 </head>
 <body>
+
+
+<style media="screen">
+body {
+  background-color: white; /*#f1e8e8  gris*/
+}
+
+
+</style>
+
+
 
 </br>
 
@@ -216,6 +235,8 @@ $(function(){
 
         <div>
 
+
+
     <!-- Scripts -->
     <script src="/js/app.js"></script>
     <!-- Bootstrap core JavaScript
@@ -230,6 +251,8 @@ $(function(){
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
 
+
+<div id="particles">
 
 
 </body>
