@@ -165,22 +165,201 @@
 
 
 
+            <div class="row">
+            <div class="col-md-12">
+        			<div class="col-sm-6 col-md-3">
+        				<div class="thumbnail" >
+        					<h4 class="text-center"><span class="label label-info">Apple</span></h4>
+        					<img src="img/apple-iphone-5s_1378837974_450x400-1.jpg" class="img-responsive" alt="Iphone 5s">
+        					<div class="caption">
+        						<div class="row">
+        							<div class="col-md-6 col-xs-6">
+        								<h3>Iphone 5s</h3>
+        							</div>
+        							<div class="col-md-6 col-xs-6 price">
+        								<h3>
+        								<label>249 €</label></h3>
+        							</div>
+        						</div>
+        						<p>16GB, 32GB, IOS10</p>
+                    <div class="row">
+                      <div class="col-md-5"></div>
+                      <div class="col-md-4">
+                        <a href="#" class="btn btn-success btn-product">Fiche tecnique</a></div>
+                    </div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-sm-6 col-md-3">
+        				<div class="thumbnail" >
+        					<h4 class="text-center"><span class="label label-info">Samsung</span></h4>
+        					<img src="img/Samsung-Galaxy-J1-Mini.jpg" class="img-responsive" alt="Samsung Galaxy J1 mini">
+        					<div class="caption">
+        						<div class="row">
+        							<div class="col-md-6 col-xs-6">
+        								<h3>Samsung Galaxy J1 mini</h3>
+        							</div>
+        							<div class="col-md-6 col-xs-6 price">
+        								<h3>
+        								<label>129 €</label></h3>
+        							</div>
+        						</div>
+        						<p>Android 4.4 KitKat, 	5 mégapixels avec Flash LED</p>
+                    <div class="row">
+                      <div class="col-md-5"></div>
+                      <div class="col-md-4">
+                        <a href="#" class="btn btn-success btn-product">Fiche tecnique</a></div>
+                    </div>
+        					</div>
+        				</div>
+        			</div>
+                    <div class="col-sm-6 col-md-3">
+        				<div class="thumbnail" >
+        					<h4 class="text-center"><span class="label label-info">Samsung</span></h4>
+        					<img src="img/samsung_galaxy_j3_2016_4g_dual_sim_gold_j320fd_1.jpg" class="img-responsive" alt="Samsung Galaxy J1 2016">
+        					<div class="caption">
+        						<div class="row">
+        							<div class="col-md-6 col-xs-6">
+        								<h3>Samsung Galaxy J1 2016</h3>
+        							</div>
+        							<div class="col-md-6 col-xs-6 price">
+        								<h3>
+        								<label>159 €</label></h3>
+        							</div>
+        						</div>
+        						<p>Android 5.1, 5 mégapixels,  8 Go, 1 Go RAM</p>
+                    <div class="row">
+                      <div class="col-md-5"></div>
+                      <div class="col-md-4">
+                        <a href="#" class="btn btn-success btn-product">Fiche tecnique</a></div>
+                    </div>
+
+        					</div>
+        				</div>
+        			</div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail" >
+              <h4 class="text-center"><span class="label label-info">Apple</span></h4>
+              <img src="img/apple-iphone-5c_1378838033_450x400.jpg" class="img-responsive" alt="Iphone 5c 32 gb">
+              <div class="caption">
+                <div class="row">
+                  <div class="col-md-6 col-xs-6">
+                    <h3>Iphone 5c</h3>
+                  </div>
+                  <div class="col-md-6 col-xs-6 price">
+                    <h3><label>199 €</label></h3>
+                  </div>
+                </div>
+                <p>32GB,64GB, IOS1O</p>
+                <div class="row">
+                  <div class="col-md-5"></div>
+                  <div class="col-md-4">
+                    <a href="#" class="btn btn-success btn-product">Fiche tecnique</a></div>
+                </div>
+
+
+
+              </div>
+            </div>
+        </div>
+</div>
+</div>
+
 
 
 
           <h1 class="text-center text-light text-danger"> Protéger votre mobile avec nos accessoires</h1>
 
+
+          	<div class="row">
+              	<!-- BEGIN PRODUCTS -->
+            		<div class="col-md-3 col-sm-6">
+              		<span >
+                			<img src="img/etui-housse-coque-pochette-noir-interieur-silicone.jpg" class="img-responsive" alt="Housse smartphone">
+                			<h4 class="text-center">Housse smartphone</h4>
+
+                			<div class="row">
+                				<div>
+                					<p class="text-center">11.90 €</p>
+                				</div>
+
+
+                			</div>
+              		</span>
+            		</div>
+            		<div class="col-md-3 col-sm-6">
+              		<span >
+                			<img src="img/91bSB83RnTL._SY355_.jpg" class="img-responsive" alt="Housse tablettes">
+                			<h4 class="text-center">Housse tablettes</h4>
+
+
+                			<div class="row">
+                				<div>
+                					<p class="price text-center">14,99 €</p>
+                				</div>
+
+                			</div>
+              		</span>
+            		</div>
+            		<div class="col-md-3 col-sm-6">
+              		<span >
+                			<img src="img/muvit-film-protecteur-verre-trempe-plat-pour-apple.jpg" class="img-responsive" alt="Film en verre trempé smartphone">
+                			<h4 class="text-center">Film en verre trempé smartphone</h4>
+
+                			<div class="row">
+                				<div>
+                					<p class="price text-center">10 €</p>
+                				</div>
+                			</div>
+              		</span>
+            		</div>
+            		<div class="col-md-3 col-sm-6">
+              		<span >
+                			<img src="img/coque-silicone-transparente-iphone-66s-souple-invisible-housse-etui.jpg" class="img-responsive" alt=" Coque gel smartphone">
+                			<h4 class="text-center"> Coque gel smartphone</h4>
+
+                			<div class="row">
+                				<div>
+                					<p class="price text-center">7€ 90</p>
+                				</div>
+
+                			</div>
+              		</span>
+            		</div>
+            		<!-- END PRODUCTS -->
+          	</div>
+
+
         </section>
       <!-- section /.vente -->
 
-
+    </div>
+    </div>
 <!--///////////////////////////////////////////////////////////////////////// -->
+
+
+    <div class="row">
+      <div class="col-md-7">
+	<img src="img/Resized_20161027_163312.jpeg" class="img-responsive" alt="">
+
+      </div>
+   <div class="col-md-5">
+          <h1 class="text-center text-light text-danger"> Point Express Mobile </h1>
+
+        <h3 class="text-center">  Votre boutique N°1 sur Aubagne </h3> </br>
+
+        Boutique située dans le centre-ville d’Aubagne, Point Express Mobile est le spécialiste de la réparation de votre smartphone Android et Apple. <div class="clearfix">&nbsp;</div>
+
+        Quelque soit votre modèle de téléphone Android ou Apple : iPhone 4, iPhone 4S, iPhone 5, iPhone 5S ou 5C, iPhone 6 et 6S et désormais l’iPhone 7, nous avons la solution. <div class="clearfix">&nbsp;</div>
+
+        Dans notre boutique nous vous proposons également une gamme complète d’accessoires. Coques de protection, Cover, adaptateur, chargeur… Nous avons l’accessoire qu’il vous faut.
+    </div>
 
 
 <!-- ///////////////////////////////////////////////////////////////////-->
 
-</div>
-</div>
+
 
 <div class="clearfix">&nbsp;</div>
       <!-- section accessoires -->
